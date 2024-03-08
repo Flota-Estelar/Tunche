@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tunche</title>
     <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <section style="height: 100px; margin-bottom: 10px; width: 100%; background-color: black; color: white;">
-      <img src="img/imagen1.png" style="width: 100px; height: 100px;" alt="Logo">
-    </section>
+    <header>
+      <nav>
+        <img src="img/imagen1.png" class="logo" alt="Logo" />
+        <div class="control-links">
+          <a href="index.html">Inicio</a>
+          <a href="">Nosotros</a>
+          <a href="tiendas.html">Tiendas</a>
+          <a href="contacto.html">Contactos</a>
+        </div>
+        <div class="button-link">
+          <a href="#" class="login" id="btn-abrir-modal">Ingresar</a>
+          <a href="form.html" class="sign">Registrarse</a>
+        </div>
+      </nav>
+    </header>
    
     <hr>
     
@@ -82,11 +95,10 @@
         </div>
         <div class="column-f2">
           <h3>Menú</h3>
-          <p>Inicio</p>
-          <p>Sobre nosotros</p>
-          <p>Tiendas</p>
-          <p>Contacto</p>
-          <p>Programas</p>
+          <a href="index.html"><p>Inicio</p></a>
+          <a href=""><p>Nosotros</p></a>
+          <a href="tiendas.html"><p>Tienda</p></a>
+          <a href="contacto.html"><p>Contactos</p></a>
         </div>
         <div class="column-f2">
           <img src="img/imagen1.png" style="width: 150px; height: 150px;" alt="Logo">
@@ -103,6 +115,53 @@
         <p>Desarrollo Web: Flota Estelar</p>
       </div>
     </footer>
+
+    <dialog id="modal">
+      <div class="container-close">
+        <button id="btn-cerrar-modal" class="btn-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="login-form">
+        <form id="form-session">
+          <h1>Iniciar sesión</h1>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <span class="input-icon"><i class="fa fa-envelope"></i></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="psw"
+              placeholder="Contraseña"
+              required
+            />
+            <span class="input-icon"><i class="fa fa-lock"></i></span>
+          </div>
+          <div class="form-submit">
+            <button id="btn-cerrar-modal2" class="btn-login" type="submit">
+              Ingresar
+            </button>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+          <div class="social-icon">
+            <button type="button"><i class="fa fa-google"></i></button>
+            <button type="button"><i class="fa fa-facebook"></i></button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="js/events.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ab9e6c0458.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
   </html>
 </html>
