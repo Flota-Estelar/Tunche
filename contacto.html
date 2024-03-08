@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tunche</title>
-    <link rel="stylesheet" href="css/styles-tiendas.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="preload" href="img/SI.png" as="image" />
-    <link rel="preload" href="img/MI.png" as="image" />
-    <link rel="preload" href="img/CL.png" as="image" />
   </head>
   <body>
     <header>
@@ -26,66 +23,61 @@
         </div>
       </nav>
     </header>
-    <!-- Inicia Tiendas -->
-
-    <br>
+   
     <hr>
-    <br>
-
-    <div class="contenedor"> 
-
-      <div class="sectiontiendas"> 
     
-        
-      <div class="tienda1">
-    <img src="img/SI.png" alt="">
-      </div>
+    <!-- Info de contacto-->
 
-      <div class="info1">
-        <h1>SAN ISIDRO</h1>
-        <p>av. Las Camelias 9966 urb. Las Golondrinas</p>
+    <main class="contenedor">
+      <h3 class="centrar-texto">Contacto</h3>
+
+      <div class="contacto"></div>
+
+      <form class="formulario">
+          <div class="campo">
+              <label class="campo__label" for="nombre">Nombre</label>
+              <input 
+                  class="campo__field"
+                  type="text" 
+                  placeholder="Tu Nombre" 
+                  id="nombre"
+              >
           </div>
+          <div class="campo">
+              <label class="campo__label" for="email">E-mail</label>
+              <input 
+                  class="campo__field"
+                  type="email" 
+                  placeholder="Tu E-mail" 
+                  id="email"
+              >
+          </div>
+          <div class="campo">
+            <label class="campo__label" for="email">Teléfono</label>
+            <input 
+                class="campo__field"
+                type="tel" 
+                placeholder="Tu Teléfono" 
+                id="telefono"
+            >
         </div>
-     
-      <br>
-      <hr>
-      <br>
-
-      <div class="sectiontiendas2"> 
-    
-        
-        <div class="tienda2">
-      <img src="img/MI.png" alt="">
-        </div>
-  
-        <div class="info2">
-          <h1>MIRAFLORES</h1>
-          <p>ca. Los Eruditos de la Astronomia 2124 urb. Los Astronautas</p>
-            </div>
+          <div class="campo">
+              <label class="campo__label" for="mensaje">Mensaje</label>
+              <textarea 
+                  class="campo__field campo__field--textarea"
+                  placeholder="Tu Mensaje" 
+                  id="mensaje"
+              ></textarea>
           </div>
-       
-        <br>
-        <hr>
-        <br>
 
-        <div class="sectiontiendas3"> 
-    
-        
-          <div class="tienda3">
-        <img src="img/CL.png" alt="">
+          <div class="campo">
+              <input type="submit" value="Enviar" class="boton">
           </div>
-    
-          <div class="info3">
-            <h1>CENTRO HISTÓRICO</h1>
-            <p>av. Los Pensamientos Racionales 1660 urb. Alameda Púrpura</p>
-              </div>
-            </div>
-            <br>
-            <br>
-            
+      </form>
 
-
-        <!--Termina tiendas -->
+      
+  </main>
+   
 
     <hr>
 
