@@ -1,3 +1,7 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   margin: 0 auto;
   width: 90%;
@@ -6,6 +10,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
 }
 
 /* Menu */
@@ -71,49 +81,28 @@ nav .button-link a {
   border-radius: 5px;
   white-space: nowrap;
 }
-
-/**/
-
-/* Section 2 Tiendas */
-
-.sectiontiendas,
-.sectiontiendas2,
-.sectiontiendas3 {
+/* Nosotros */
+main {
   display: flex;
-  width: 100%;
-  height: auto;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+main span {
+  color: chocolate;
+  font-weight: 600;
+}
+main img {
+  width: 400px;
+}
+main section {
+  display: flex;
   align-items: center;
+  padding: 30px;
+  gap: 30px;
 }
-
-.tienda1,
-.tienda2,
-.tienda3 {
-  width: 100%;
-  height: fit-content;
-}
-
-.tienda1 img,
-.tienda2 img,
-.tienda3 img {
-  width: 100%;
-}
-
-.info1 {
-  width: 100%;
-  text-align: center;
-  padding: 15em 0;
-}
-
-.info2 {
-  width: 100%;
-  text-align: center;
-  padding: 15em 0;
-}
-
-.info3 {
-  width: 100%;
-  text-align: center;
-  padding: 15em 0;
+main .franja {
+  background-color: #663501;
+  color: #fff;
 }
 
 /* Footer */
