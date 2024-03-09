@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tunche</title>
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/imagen1.png" class="logo" alt="Logo" />
+        <div class="control-links">
+          <a href="index.html">Inicio</a>
+          <a href="">Nosotros</a>
+          <a href="tiendas.html">Tiendas</a>
+          <a href="contacto.html">Contactos</a>
+        </div>
+        <div class="button-link">
+          <a href="#" class="login" id="btn-abrir-modal">Ingresar</a>
+          <a href="form.html" class="sign">Registrarse</a>
+        </div>
+      </nav>
+    </header>
+   
+    <hr>
+    
+    <!-- Info de contacto-->
+
+    <main class="contenedor">
+      <h3 class="centrar-texto">Contacto</h3>
+
+      <div class="contacto"></div>
+
+      <form class="formulario">
+          <div class="campo">
+              <label class="campo__label" for="nombre">Nombre</label>
+              <input 
+                  class="campo__field"
+                  type="text" 
+                  placeholder="Tu Nombre" 
+                  id="nombre"
+              >
+          </div>
+          <div class="campo">
+              <label class="campo__label" for="email">E-mail</label>
+              <input 
+                  class="campo__field"
+                  type="email" 
+                  placeholder="Tu E-mail" 
+                  id="email"
+              >
+          </div>
+          <div class="campo">
+            <label class="campo__label" for="email">Teléfono</label>
+            <input 
+                class="campo__field"
+                type="tel" 
+                placeholder="Tu Teléfono" 
+                id="telefono"
+            >
+        </div>
+          <div class="campo">
+              <label class="campo__label" for="mensaje">Mensaje</label>
+              <textarea 
+                  class="campo__field campo__field--textarea"
+                  placeholder="Tu Mensaje" 
+                  id="mensaje"
+              ></textarea>
+          </div>
+
+          <div class="campo">
+              <input type="submit" value="Enviar" class="boton">
+          </div>
+      </form>
+
+      
+  </main>
+   
+
+    <hr>
+
+    <footer>
+      <div class="container-footer">
+        <div class="column-f1">
+          <h3>Ubícanos</h3>
+          <p>Av. Primavera #909 local SS01, San Borja</p>
+          <p>Horario de atención: Lunes a domingo de 8am a 11 pm</p>
+          <p>Reservas: 700 1042 | 791 3550</p>
+          <p>+51 987 654 321</p>
+          <div style="text-align: center;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0259129286974!2d-76.98562052405732!3d-12.110378543090173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c79412e172c1%3A0x5b45acb4c3fc0ddd!2sAv.%20Primavera%20909%2C%20Lima%2015037!5e0!3m2!1sen!2spe!4v1708807450052!5m2!1sen!2spe" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="column-f2">
+          <h3>Menú</h3>
+          <a href="index.html"><p>Inicio</p></a>
+          <a href=""><p>Nosotros</p></a>
+          <a href="tiendas.html"><p>Tienda</p></a>
+          <a href="contacto.html"><p>Contactos</p></a>
+        </div>
+        <div class="column-f2">
+          <img src="img/imagen1.png" style="width: 150px; height: 150px;" alt="Logo">
+          <p>Nuestras redes sociales</p>
+          <div class="social-networks">
+            <img src="img/instagram.png" width="50" height="50" alt="ig">
+            <img src="img/tiktok.png" width="50" height="50" alt="tiktok">
+            <img src="img/whatsapp.png" width="50" height="50" alt="whatsapp">
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <p>© Copyright 2024 Todos los derechos reservados</p>
+        <p>Desarrollo Web: Flota Estelar</p>
+      </div>
+    </footer>
+
+    <dialog id="modal">
+      <div class="container-close">
+        <button id="btn-cerrar-modal" class="btn-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="login-form">
+        <form id="form-session">
+          <h1>Iniciar sesión</h1>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <span class="input-icon"><i class="fa fa-envelope"></i></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="psw"
+              placeholder="Contraseña"
+              required
+            />
+            <span class="input-icon"><i class="fa fa-lock"></i></span>
+          </div>
+          <div class="form-submit">
+            <button id="btn-cerrar-modal2" class="btn-login" type="submit">
+              Ingresar
+            </button>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+          <div class="social-icon">
+            <button type="button"><i class="fa fa-google"></i></button>
+            <button type="button"><i class="fa fa-facebook"></i></button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="js/events.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ab9e6c0458.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </html>
+</html>
