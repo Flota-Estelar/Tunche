@@ -43,7 +43,6 @@ nav {
 }
 
 nav .logo {
-  width: 80px;
   height: 80px;
 }
 
@@ -53,7 +52,7 @@ nav .control-links {
 }
 
 nav .control-links a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
@@ -71,38 +70,38 @@ nav .button-link {
 }
 
 nav .button-link a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
   letter-spacing: 0em;
   text-decoration: none;
-  background-color: green;
+  background-color: brown;
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
 }
 /* Nosotros */
-main{
+main {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-main span{
+main span {
   color: chocolate;
   font-weight: 600;
 }
-main img{
+main img {
   width: 400px;
 }
-main section{
-  display: flex; 
-  align-items: center; 
+main section {
+  display: flex;
+  align-items: center;
   padding: 30px;
   gap: 30px;
-  }
-main .franja{
-  background-color: maroon;
+}
+main .franja {
+  background-color: #663501;
   color: #fff;
 }
 
@@ -124,6 +123,11 @@ main .franja{
   width: 25%;
   margin: 0 5px;
   padding: 0 2%;
+}
+
+.column-f2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 .social-networks {
