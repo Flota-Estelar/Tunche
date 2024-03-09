@@ -1,5 +1,8 @@
 window.addEventListener("load", function () {
-  document.body.classList.remove("loading");
+  this.setTimeout(() => {
+    document.body.classList.remove("loading");
+    document.getElementById("fondo-carga").style.display = "none";
+  }, 500);
 });
 
 const btnAbrirModal = document.querySelector("#btn-abrir-modal");
