@@ -13,6 +13,8 @@ body {
   /* text-align: justify; */
 }
 
+
+/* fondo de la pagina de registro */
 #body {
   background-image: url(../img/coffe-wall.jpg);
   background-position: center center;
@@ -22,10 +24,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: soft-light;
 }
-.form {
-  display: flex;
-  justify-content: center;
-}
+/* --------------------------- */
 
 /* Menu */
 header {
@@ -92,29 +91,36 @@ nav .button-link a {
   white-space: nowrap;
 }
 
-/**/
+/*-----------------------------------------------*/
+
+.form {
+  display: flex;
+  justify-content: center; 
+}
+
 
 form {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(22, 22, 22);
   border-radius: 15px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
   width: 300px;
   height: 500px;
   margin-top: 50px;
   opacity: 94%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: 0.25s;
 }
 
 form:hover {
   box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
+
 
 h2 {
   color: white;
@@ -124,6 +130,7 @@ h2 {
   cursor: default;
 }
 
+/* INPUT */
 input {
   padding: 20px;
   border-radius: 4px;
@@ -136,24 +143,19 @@ input {
   color: #ffffff;
 }
 
-/* .register{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;} */
 
+/* BOTON DE REGISTRO */
 .btn {
   background-color: brown;
   color: aliceblue;
   border: 0px;
   border-radius: 10px;
   margin-top: 30px;
-  transition: 0.3s;
+  transition: 0.5s;
   cursor: pointer;
   flex-direction: column;
-  justify-content: center;
-  align-items: first center;
+  justify-content: center; 
+  align-items: center; 
   font-size: 15px;
 }
 
@@ -162,6 +164,8 @@ input {
   box-shadow: 0 0 1px #ffffff, 0 0 20px #ffffff;
   font-size: 17px;
 }
+
+/* ICONOS REDES SOCIALES*/
 
 .login-social {
   /* background-color: aqua; */

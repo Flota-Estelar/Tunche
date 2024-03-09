@@ -12,6 +12,12 @@ body {
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  body {
+    width: 90%;
+  }
+}
+
 /* Menu */
 header {
   width: 100%;
