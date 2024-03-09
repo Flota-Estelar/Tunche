@@ -3,7 +3,306 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tunche</title>
+    <link rel="icon" href="img/taza.png" type="image/png" />
+    <link rel="preload" href="img/taza.png" as="image" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/styles-index.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="fondo-carga">
+      <div id="spinner">
+        <img src="img/taza.png" />
+      </div>
+    </div>
+    <header>
+      <nav>
+        <img src="img/logo_sup.png" class="logo" alt="Logo" />
+        <div class="control-links">
+          <a href="#">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="tiendas.html">Tiendas</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="button-link">
+          <a href="#" class="login" id="btn-abrir-modal">Ingresar</a>
+          <a href="form.html" class="sign">Registrarse</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="carousel">
+        <ul class="slides">
+          <input type="radio" name="radio-buttons" id="img-1" checked />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="img/banner1.jpeg" height="600px" />
+            </div>
+            <div class="carousel-controls">
+              <label for="img-3" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-2" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-2" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="img/banner2.jpeg" />
+            </div>
+            <div class="carousel-controls">
+              <label for="img-1" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-3" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-3" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="img/banner3.jpeg" />
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <div class="carousel-dots">
+            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+          </div>
+        </ul>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- Info -->
+      <div class="container-video">
+        <h1>Nuestras variedades</h1>
+      </div>
+      <div class="container-info">
+        <div class="column">
+          <img class="img-c" src="img/cafe1.jpeg" alt="Imagen 1" />
+          <p>
+            Arabica: Explora nuestro café Arábica orgánico, cultivado en las
+            montañas de Perú. Su suavidad y notas delicadas reflejan un cultivo
+            sostenible que garantiza la pureza en cada grano. Una taza perfecta
+            donde calidad y compromiso ambiental se fusionan
+          </p>
+          <div style="width: 100%; text-align: center">
+            <a
+              ><button
+                style="
+                  background-color: brown;
+                  color: #fff;
+                  border-radius: 10px;
+                  border: none;
+                  padding: 10px 15px;
+                "
+              >
+                Comprar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: #ffffff"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <img class="img-c" src="img/cafe2.jpeg" alt="Imagen 2" />
+          <p>
+            Pacamara: Explora nuestro café Pacamara, una joya con raíces en
+            América Central. Con cuerpo robusto y notas exóticas, este café se
+            cultiva con esmero para ofrecer una experiencia única en cada taza.
+            Descubre la excelencia en su forma más pura
+          </p>
+          <div style="width: 100%; text-align: center">
+            <a
+              ><button
+                style="
+                  background-color: brown;
+                  color: #fff;
+                  border-radius: 10px;
+                  border: none;
+                  padding: 10px 15px;
+                "
+              >
+                Comprar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: #ffffff"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <img class="img-c" src="img/cafe3.jpeg" alt="Imagen 3" />
+          <p>
+            Pache: Sumérgete en la singularidad de nuestro café Pache, una
+            variedad especial cultivada en las alturas. Con su perfil suave y
+            notas distintivas, este café refleja la dedicación en su proceso de
+            cultivo. Descubre la autenticidad en cada sorbo, donde la calidad se
+            encuentra en su máximo esplendor.
+          </p>
+          <div style="width: 100%; text-align: center">
+            <a
+              ><button
+                style="
+                  background-color: brown;
+                  color: #fff;
+                  border-radius: 10px;
+                  border: none;
+                  padding: 10px 15px;
+                "
+              >
+                Comprar
+                <i
+                  class="fa-solid fa-cart-shopping"
+                  style="color: #ffffff"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <hr />
+      <br />
+
+      <div class="container-video">
+        <div class="container-video">
+          <h1>Conoce un poco más acerca de nuestros socios y proveedores</h1>
+        </div>
+        <div class="row">
+          <iframe
+            class="hola"
+            height="400"
+            src="https://www.youtube.com/embed/VFxbFtf6jgo?si=AH2ZTzW99Q23_NcB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <br />
+    <br />
+    <hr />
+
+    <footer>
+      <div class="container-footer">
+        <div class="column-f1">
+          <h3>Ubícanos</h3>
+          <p>Av. Primavera #909 local SS01, San Borja</p>
+          <p>Horario de atención: Lunes a domingo de 8am a 11 pm</p>
+          <p>Reservas: 700 1042 | 791 3550</p>
+          <p>+51 987 654 321</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0259129286974!2d-76.98562052405732!3d-12.110378543090173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c79412e172c1%3A0x5b45acb4c3fc0ddd!2sAv.%20Primavera%20909%2C%20Lima%2015037!5e0!3m2!1sen!2spe!4v1708807450052!5m2!1sen!2spe"
+              width="250"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="column-f2">
+          <h3>Acceso rápido</h3>
+          <a href="contacto.html"><img src="img/libro1.png" width="100" /></a>
+        </div>
+        <div class="column-f2">
+          <img
+            src="img/logo_inf.png"
+            style="width: 150px; height: 150px"
+            alt="Logo"
+          />
+          <p>Nuestras redes sociales</p>
+          <div class="social-networks">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/instagram.png" width="50" height="50" alt="ig"
+            /></a>
+            <a href="https://www.tiktok.com/" target="_blank"
+              ><img src="img/tiktok.png" width="50" height="50" alt="tiktok"
+            /></a>
+            <a href="https://www.whatsapp.com/" target="_blank"
+              ><img
+                src="img/whatsapp.png"
+                width="50"
+                height="50"
+                alt="whatsapp"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <p>© 2024 Tunche. Todos los derechos reservados</p>
+        <p>Desarrollo Web: Flota Estelar</p>
+      </div>
+    </footer>
+
+    <dialog id="modal">
+      <div class="container-close">
+        <button id="btn-cerrar-modal" class="btn-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="login-form">
+        <form id="form-session">
+          <h1>Iniciar sesión</h1>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <span class="input-icon"><i class="fa fa-envelope"></i></span>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="psw"
+              placeholder="Contraseña"
+              required
+            />
+            <span class="input-icon"><i class="fa fa-lock"></i></span>
+          </div>
+          <div class="form-submit">
+            <button id="btn-cerrar-modal2" class="btn-login" type="submit">
+              Ingresar
+            </button>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+          <div class="social-icon">
+            <button type="button"><i class="fa fa-google"></i></button>
+            <button type="button"><i class="fa fa-facebook"></i></button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="js/events.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ab9e6c0458.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,306 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  background-color: white;
+  text-align: justify;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  text-align: justify;
+}
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+/* Menu */
+header {
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  height: 80px;
+  color: white;
+  top: 0;
+  z-index: 1000;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .logo {
+  height: 80px;
+}
+
+nav .control-links {
+  display: flex;
+  gap: 40px;
+}
+
+nav .control-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-decoration: none;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+nav .button-link {
+  display: flex;
+  gap: 20px;
+}
+
+nav .button-link a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-decoration: none;
+  background-color: brown;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/**/
+
+/* Info */
+.container-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.column {
+  width: 30%;
+  margin: 0 5px;
+  padding: 0 2%;
+}
+
+.img-c {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .container-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .column {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Footer */
+.container-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.column-f1 {
+  width: 40%;
+  margin: 0 5px;
+  padding: 0 2%;
+}
+
+.column-f2 {
+  width: 25%;
+  margin: 0 5px;
+  padding: 0 2%;
+}
+
+.column-f2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.map {
+  text-align: left;
+}
+
+.social-networks {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+
+  nav .control-links {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .column-f1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .column-f2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .social-networks {
+    justify-content: center;
+  }
+
+  .map {
+    text-align: center;
+  }
+}
+
+/** fontacto formulario **/
+
+.formulario {
+  background-color: white;
+  width: 90%;
+}
+
+.contacto {
+  height: 3rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.campo-button {
+  width: 100%;
+  align-items: center;
+}
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 18px;
+}
+.campo__field {
+  flex: 1;
+  border: 1px solid black;
+}
+.campo__field--textarea {
+  height: 20rem;
+}
+
+.boton {
+  display: block;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border: none;
+
+  border-radius: 15px;
+  margin: auto;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: brown;
+  transition: 1s all ease;
+  transform: scale(1.1);
+}
+
+/*Boton whatsapp*/
+.containt-boton-w {
+  background-color: #2e6329;
+  border: 1px #fff;
+  position: fixed; /*fijo*/
+  z-index: 999; /*para que se ponga delante de los elementos*/
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25%;
+  padding: 25px;
+  transition: ease 0.3s;
+  /*animation: efecto 1.2s infinite;*/
+  margin-right: -50rem;
+}
+
+.containt-boton-w:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton-w {
+  width: 40px;
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85); /*sombreado*/
+  }
+
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+
+.centrar-texto {
+  text-align: center;
+  font-size: 3rem;
+}
