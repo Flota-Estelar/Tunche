@@ -14,7 +14,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -43,7 +43,6 @@ nav {
 }
 
 nav .logo {
-  width: 80px;
   height: 80px;
 }
 
@@ -53,7 +52,7 @@ nav .control-links {
 }
 
 nav .control-links a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
@@ -71,13 +70,13 @@ nav .button-link {
 }
 
 nav .button-link a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
   letter-spacing: 0em;
   text-decoration: none;
-  background-color: green;
+  background-color: brown;
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
@@ -193,6 +192,10 @@ ul.slides input {
   margin: 10px;
 }
 
+.carousel-dots .carousel-dot:hover {
+  cursor: pointer;
+}
+
 input:checked + .slide-container .slide-image {
   opacity: 1;
   transform: scale(1);
@@ -230,6 +233,22 @@ input:checked + .slide-container .nav label {
   padding: 0 2%;
 }
 
+.container-video {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hola {
+  width: 70%;
+}
+
+.row {
+  margin: 0 5px;
+  padding: 0 2%;
+}
+
 .img-c {
   width: 100%;
   max-width: 100%;
@@ -244,7 +263,7 @@ input:checked + .slide-container .nav label {
   }
   .column {
     width: 100%;
-    margin: 0;
+    margin: 20px;
     padding: 0;
   }
 }
@@ -269,8 +288,27 @@ input:checked + .slide-container .nav label {
   padding: 0 2%;
 }
 
+.column-f2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.map {
+  text-align: left;
+}
+
 .social-networks {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+
+  nav .control-links {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -295,5 +333,9 @@ input:checked + .slide-container .nav label {
 
   .social-networks {
     justify-content: center;
+  }
+
+  .map {
+    text-align: center;
   }
 }
