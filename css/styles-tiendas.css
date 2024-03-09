@@ -42,7 +42,7 @@ nav .control-links {
 }
 
 nav .control-links a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
@@ -60,13 +60,13 @@ nav .button-link {
 }
 
 nav .button-link a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
   letter-spacing: 0em;
   text-decoration: none;
-  background-color: green;
+  background-color: brown;
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
