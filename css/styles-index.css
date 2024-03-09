@@ -14,7 +14,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -297,3 +297,4 @@ input:checked + .slide-container .nav label {
     justify-content: center;
   }
 }
+
