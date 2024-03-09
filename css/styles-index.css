@@ -12,12 +12,6 @@ body {
   text-align: justify;
 }
 
-@media (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-}
-
 /* Menu */
 header {
   width: 100%;
@@ -192,6 +186,10 @@ ul.slides input {
   margin: 10px;
 }
 
+.carousel-dots .carousel-dot:hover {
+  cursor: pointer;
+}
+
 input:checked + .slide-container .slide-image {
   opacity: 1;
   transform: scale(1);
@@ -275,6 +273,16 @@ input:checked + .slide-container .nav label {
 
 .social-networks {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 98%;
+  }
+
+  nav .control-links {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 640px) {
