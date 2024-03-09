@@ -43,7 +43,6 @@ nav {
 }
 
 nav .logo {
-  width: 80px;
   height: 80px;
 }
 
@@ -267,6 +266,11 @@ input:checked + .slide-container .nav label {
   width: 25%;
   margin: 0 5px;
   padding: 0 2%;
+}
+
+.column-f2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 .social-networks {

@@ -257,6 +257,11 @@ input:checked + .slide-container .nav label {
   padding: 0 2%;
 }
 
+.column-f2 a {
+  text-decoration: none;
+  color: #000;
+}
+
 .social-networks {
   display: flex;
 }
