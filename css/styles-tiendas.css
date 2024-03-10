@@ -33,7 +33,6 @@ nav {
 }
 
 nav .logo {
-  width: 80px;
   height: 80px;
 }
 
@@ -43,7 +42,7 @@ nav .control-links {
 }
 
 nav .control-links a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
@@ -61,13 +60,13 @@ nav .button-link {
 }
 
 nav .button-link a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 24px;
   letter-spacing: 0em;
   text-decoration: none;
-  background-color: green;
+  background-color: brown;
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
@@ -77,77 +76,45 @@ nav .button-link a {
 
 /* Section 2 Tiendas */
 
-/* .contenedor {
-} */
-
-.sectiontiendas {
+.sectiontiendas,
+.sectiontiendas2,
+.sectiontiendas3 {
   display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 
-.tienda1 img {
-  width: 713px;
+.tienda1,
+.tienda2,
+.tienda3 {
+  width: 100%;
+  height: fit-content;
+}
+
+.tienda1 img,
+.tienda2 img,
+.tienda3 img {
+  width: 100%;
 }
 
 .info1 {
-  width: 713px;
-
+  width: 100%;
   text-align: center;
   padding: 15em 0;
-}
-
-.sectiontiendas2 {
-  display: flex;
-}
-
-.tienda2 img {
-  width: 713px;
 }
 
 .info2 {
-  width: 713px;
+  width: 100%;
   text-align: center;
   padding: 15em 0;
-}
-
-.sectiontiendas3 {
-  display: flex;
-}
-
-.tienda3 img {
-  width: 713px;
 }
 
 .info3 {
-  width: 713px;
-
+  width: 100%;
   text-align: center;
   padding: 15em 0;
 }
-
-/*
-.contenedor{
-  display: flex;
-  flex-direction: column;
-  
-
-}
-
-.sectiontiendas img{
-  max-width: 770px; 
-  width: 50%;
-  
-
-}
-
-.sectiontiendas2 img{
-  display: flex;
-  align-items: flex-start;
-  float: right;
-  
-  width: 48%;
-}
-
-*/
 
 /* Footer */
 .container-footer {
@@ -167,6 +134,11 @@ nav .button-link a {
   width: 25%;
   margin: 0 5px;
   padding: 0 2%;
+}
+
+.column-f2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 .social-networks {
